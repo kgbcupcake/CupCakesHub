@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CupCakesHub.Interfaces.Gui;
 using Pastel;
-using static System.Console;
 using static CupCakesHub.Interfaces.Functions;
+using static System.Console;
 namespace CupCakesHub.Main
 {
-	 class MainScreen
+	class MainScreen
 	{
 		private string gameVersion = "Version V.1 \n";
 		//private string Info = "CupCakes's-Adventure v1 is a early Alpha project.\nAt the moment it only has a limited amount of  stuff ";
@@ -56,19 +52,44 @@ namespace CupCakesHub.Main
 
 
 
-
-
-			WriteOnBottomLine(gameVersion.Pastel("#5A057A"));
+		WriteOnBottomLine(gameVersion.Pastel("#5A057A"));
 			Write("						Press Enter To Enter : ");
 
 			ConsoleKeyInfo key = ReadKey();
 			Thread.Sleep(500);
 			Clear();
+
 			MainMenu.Mainmenu();
 
 		}
 
 
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 

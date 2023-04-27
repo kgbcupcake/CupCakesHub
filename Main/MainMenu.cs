@@ -1,9 +1,9 @@
-﻿using CupCakesHub.Interfaces;
+﻿using CupCakesHub.Interfaces.Loaders;
 using Pastel;
 using static System.Console;
 namespace CupCakesHub.Main
 {
-	internal class MainMenu
+    internal class MainMenu
 	{
 
 		public static void Mainmenu()
