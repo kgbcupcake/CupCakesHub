@@ -1,9 +1,10 @@
 #									CupCakesHub
  
 ## Description:
+#### This is a complete rebuild of my original game manager. I decided to just call it cupcakes hub
 #### So this is just a simple program That always you to have all your Game's and Program's in one place
 #### There is nothing special about this program... Will be adding more as i learn more C#
-#### This program uses Terminal.Gui for some of the Gui stuff, This is a new Feature  i think will go  good with this Manager Hub
+#### This program uses Terminal.Gui for some of the Gui stuff, This is a new Feature  i think will go good with this Manager Hub
 
 =======
 ## Some Useful Info
@@ -22,13 +23,8 @@
 
 
 # ChangeLog:
-### V1:
-#### Added Game File For Adding Game Location's
-#### Added Program FIle For Adding Program's Location's
-
-### V1.1
-#### Added Login System...
-#### Added Source Page...
 
 ### 4/27/23
-#### Implemented Terminal.Gui FrameWork...
+#### Added Source Page...
+
+
