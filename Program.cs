@@ -1,4 +1,4 @@
-﻿using CupCakesHub.Main;
+﻿using CupCakeslauncher.Main;
 
 
 

@@ -1,4 +1,4 @@
-#									CupCakesHub
+#									CupCakeslauncher
  
 ## Description:
 #### This is a complete rebuild of my original game manager. I decided to just call it cupcakes hub

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Pastel;
-using static System.Console;
+﻿using Pastel;
 using System.Diagnostics;
+using static System.Console;
 
-namespace CupCakesHub.Interfaces.Loaders
+namespace CupCakeslauncher.Interfaces.Loaders
 {
-    internal class LoadSources
+	internal class LoadSources
     {
 
         public static void Loadsource()

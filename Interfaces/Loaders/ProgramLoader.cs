@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CupCakesHub.Interfaces.NewFolder
+namespace CupCakeslauncher.Interfaces.NewFolder
 {
 	internal class ProgramLoader
 	{

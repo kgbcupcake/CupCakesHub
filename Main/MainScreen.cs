@@ -1,8 +1,7 @@
-﻿using CupCakesHub.Interfaces.Gui;
-using Pastel;
-using static CupCakesHub.Interfaces.Functions;
+﻿using Pastel;
 using static System.Console;
-namespace CupCakesHub.Main
+using static CupCakeslauncher.Interfaces.Functions;
+namespace CupCakeslauncher.Main
 {
 	class MainScreen
 	{
