@@ -8,14 +8,13 @@
 
 =======
 ## Some Useful Info
-#### At the moment the only way to add the location's is via  the code it's self..
+#### At the moment the only way to add the location's is via the code it's self...
 #### i know inconvenience sorry about that....
 =======
 ## Future Plan's:
 #### Better User Gui (Being Worked on With Terminal.Gui).
-#### Loading Files And Programs Via Json Files.
+#### Loading Files And Programs Via Json Files.(Maybe If i Can Figure it out)
 #### Installation wizard (Being Worked on With Wix).
-
 =======
 # ChangeLog:
 
@@ -29,4 +28,4 @@
 ### Set up classes to add Program's and Game's...
 ### Made a Utilities Folder...
 ### Cleaned Some Stuff up...
-
+### Added Program Class...

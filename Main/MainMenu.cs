@@ -1,4 +1,5 @@
 ﻿using CupCakes_launcher.Interfaces.Loaders;
+using CupCakeslauncher.Interfaces.NewFolder;
 using Pastel;
 using static System.Console;
 namespace CupCakeslauncher.Main
@@ -28,18 +29,16 @@ namespace CupCakeslauncher.Main
 						//LoadGames.LoadGameMenu();
 						break;
 					case "P":
-						//LoadPrograms.Loadprograms();
+						ProgramLoader.Loadprograms();
 						break;
 					case "S":
+						Clear();
 						CreditLoader.loadCredits();
 						//LoadSources.Loadsource();
 						break;
-
 					case "E":
 						Environment.Exit(0);
 						break;
-
-
 					default:
 						Clear();
 						WriteLine("Plz Enter The Right Letter ");
