@@ -1,7 +1,7 @@
 #									CupCakeslauncher
  
 ## Description:
-#### This is just a simple program That always you to have all your Game's and Program's in one place <br> There is nothing special about this program... i  Will be adding more as i learn more C#
+#### This is just a simple program That always you to have all your Game's and Program's in one place There is nothing special about this program... i  Will be adding more as i learn more C#
 #### 
 #### I do Plan in the Future to add terminal.GUI for some of the Gui Interfaces I think it would be a good Implementation.  
 
