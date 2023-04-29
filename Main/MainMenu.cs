@@ -26,7 +26,7 @@ namespace CupCakeslauncher.Main
 				{
 
 					case "G":
-						//LoadGames.LoadGameMenu();
+						GameLoader.LoadGameMenu();
 						break;
 					case "P":
 						ProgramLoader.Loadprograms();
@@ -34,7 +34,6 @@ namespace CupCakeslauncher.Main
 					case "S":
 						Clear();
 						CreditLoader.loadCredits();
-						//LoadSources.Loadsource();
 						break;
 					case "E":
 						Environment.Exit(0);

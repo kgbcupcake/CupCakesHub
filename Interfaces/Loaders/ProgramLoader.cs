@@ -48,20 +48,20 @@ namespace CupCakeslauncher.Interfaces.NewFolder
 					Clear();
 
 					ProcessStartInfo startInfo1 = new ProcessStartInfo();
-					startInfo1.FileName = @"Add The Directory path here"; // Here is where you add the game you want to load up....
+					startInfo1.FileName = @"Add The Directory path here"; 
 					Process.Start(startInfo1);
 					Loadprograms();
 					break;
 				case "2":
 					ProcessStartInfo startInfo2 = new ProcessStartInfo();
-					startInfo2.FileName = @"Add The Directory path here"; // Here is where you add the game you want to load up....
+					startInfo2.FileName = @"Add The Directory path here"; 
 					Process.Start(startInfo2);
 					Loadprograms();
 					break;
 
 				case "3":
 					ProcessStartInfo startInfo3 = new ProcessStartInfo();
-					startInfo3.FileName = @"Add The Directory path here"; // Here is where you add the game you want to load up....
+					startInfo3.FileName = @"Add The Directory path here";
 					Process.Start(startInfo3);
 					Loadprograms();
 					break;
@@ -69,14 +69,14 @@ namespace CupCakeslauncher.Interfaces.NewFolder
 
 				case "4":
 					ProcessStartInfo startInfo4 = new ProcessStartInfo();
-					startInfo4.FileName = @"Add The Directory path here"; // Here is where you add the game you want to load up....
+					startInfo4.FileName = @"Add The Directory path here"; 
 					Process.Start(startInfo4);
 					Loadprograms();
 					break;
 
 				case "5":
 					ProcessStartInfo startInfo5 = new ProcessStartInfo();
-					startInfo5.FileName = @"Add The Directory path here"; // Here is where you add the game you want to load up....
+					startInfo5.FileName = @"Add The Directory path here";
 					Process.Start(startInfo5);
 					Loadprograms();
 					break;
