@@ -1,9 +1,9 @@
-﻿using CupCakeslauncher.Interfaces.Loaders;
+﻿using CupCakes_launcher.Interfaces.Loaders;
 using Pastel;
 using static System.Console;
 namespace CupCakeslauncher.Main
 {
-	internal class MainMenu
+    internal class MainMenu
 	{
 
 		public static void Mainmenu()
@@ -13,12 +13,6 @@ namespace CupCakeslauncher.Main
 
 			static void Menu()
 			{
-
-
-
-
-
-
 				WriteLine("						==============================================".Pastel("#125874"));
 
 				WriteLine("							  |(G)ame Menu|            |(P)rogram's|	                             ");
@@ -26,8 +20,6 @@ namespace CupCakeslauncher.Main
 
 				WriteLine("							               |(E)xit|												");
 				WriteLine("						==============================================".Pastel("#125874"));
-
-
 
 				switch (ReadLine().ToUpper())
 				{
@@ -39,7 +31,8 @@ namespace CupCakeslauncher.Main
 						//LoadPrograms.Loadprograms();
 						break;
 					case "S":
-						LoadSources.Loadsource();
+						CreditLoader.loadCredits();
+						//LoadSources.Loadsource();
 						break;
 
 					case "E":
@@ -53,12 +46,7 @@ namespace CupCakeslauncher.Main
 						Mainmenu();
 						break;
 				}
-
-
-
 			}
-
-			//WaitForAnyKeyPress();
 		}
 	}
 }

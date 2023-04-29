@@ -1,14 +1,48 @@
-﻿using Pastel;
+﻿using CupCakeslauncher.Main;
 using System.Diagnostics;
+using Newtonsoft.Json;
+using Pastel;
 using static System.Console;
+using CupCakes_launcher.Utilities.GameUtilities;
 
-namespace CupCakeslauncher.Interfaces.Loaders
+namespace CupCakes_launcher.Interfaces.Loaders
 {
-	internal class LoadSources
+    class CreditLoader
     {
 
-        public static void Loadsource()
+        public static string Indent(int count)
         {
+            return "".PadLeft(count);
+        }
+
+
+
+
+
+
+
+        public static void loadCredits()
+        {
+            //string? Tab = "\t";
+
+            var basePath = $"{AppDomain.CurrentDomain.BaseDirectory}Credits";
+            var Loadcredit = new CreditData();
+            if (File.Exists($"{basePath}\\Credits.json"))
+            {
+                var directory = new DirectoryInfo(basePath);
+                var LoadcreditJsonFile = directory.GetFiles("Credits.json");
+
+                using StreamReader fi = File.OpenText(LoadcreditJsonFile[0].FullName);
+                Loadcredit = JsonConvert.DeserializeObject<CreditData>(fi.ReadToEnd());
+            }
+            string? Title = "Title:".Pastel("#29188D");
+            string? Link = "Link:".Pastel("#8D0E2E");
+
+
+
+
+
+
 
             string? SourceTitle = "								=== Source's ===";
 
@@ -23,24 +57,15 @@ namespace CupCakeslauncher.Interfaces.Loaders
             WriteLine();
 
             WriteLine("						==============================================".Pastel("#125874"));
-            WriteLine("							  |(G)it Hub|            |(Y)ouTube|	                         \n\n    ");
+            WriteLine("						      |(G)it Hub|            |(Y)ouTube|	                         \n\n    ");
 
 
-            WriteLine("							  |(D)iscord|            |ComingSoon|	                          \n\n   ");
+            WriteLine("						      |(D)iscord|            |ComingSoon|	                          \n\n   ");
 
-            WriteLine("								       |(E)xit|												");
+
+            WriteLine("							             (E)xit                                       ");
             WriteLine("						==============================================".Pastel("#125874"));
 
-
-
-
-            //string request = "https://www.google.com";
-            //ProcessStartInfo ps = new ProcessStartInfo
-            //{
-            //	FileName = request,
-            //	UseShellExecute = true
-            //};
-            //Process.Start(ps);
 
 
 
@@ -50,7 +75,8 @@ namespace CupCakeslauncher.Interfaces.Loaders
             {
                 //GitHUb
                 case "G":
-                    string request = "https://github.com/kgbcupcake?tab=repositories";
+
+                    string? request = Loadcredit.LinkG;
                     ProcessStartInfo ps = new ProcessStartInfo
                     {
                         FileName = request,
@@ -60,11 +86,12 @@ namespace CupCakeslauncher.Interfaces.Loaders
                     WriteLine("Loading Program's Plz wait....");
                     Thread.Sleep(1500);
                     Clear();
+                    loadCredits();
                     break;
+
                 //Youtube
                 case "Y":
-
-                    string requestY = "https://www.youtube.com/channel/UCaJ9YHkVsRRg3-oI604VTxQ";
+                    string? requestY = Loadcredit.LinkY;
                     ProcessStartInfo psY = new ProcessStartInfo
                     {
                         FileName = requestY,
@@ -74,68 +101,37 @@ namespace CupCakeslauncher.Interfaces.Loaders
                     WriteLine("Loading Program's Plz wait....");
                     Thread.Sleep(1500);
                     Clear();
+                    loadCredits();
                     break;
 
                 //Discord
                 case "D":
-
-                    string requestD = "https://discord.gg/y66zx9d7";
+                    string? requestD = Loadcredit.LinkD;
                     ProcessStartInfo psD = new ProcessStartInfo
                     {
                         FileName = requestD,
                         UseShellExecute = true
                     };
                     Process.Start(psD);
-
                     Thread.Sleep(1500);
                     WriteLine("Loading Program's Plz wait....");
                     Clear();
+                    loadCredits();
                     break;
-
+                //Exit
+                case "E":
+                    Clear();
+                    WriteLine("Returning to the main menu");
+                    Thread.Sleep(2000);
+                    Clear();
+                    MainMenu.Mainmenu();
+                    break;
                 default:
                     Clear();
                     WriteLine("Plz Enter The Right Letter ");
-                    Loadsource();
+                    loadCredits();
                     break;
             }
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
