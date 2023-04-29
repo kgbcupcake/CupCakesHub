@@ -1,5 +1,3 @@
-#									CupCakeslauncher FrameWork
- 
 ## Description:
 #### This is just a simple FrameWork That always you to have all your Game's and Program's in one place. I made the code simple so you can add your own Directory path and more options to the menu if you choice so.
 #### I do Plan in the Future to add terminal.GUI for some of the Gui Interfaces I think it would be a good Implementation.
